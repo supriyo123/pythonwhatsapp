@@ -1,0 +1,29 @@
+
+k={}
+print("Enter The Names in the contact list....")
+while True:
+    print("Do U want to continue 1 for yes 2 for no.")
+    s=int(input("Enter The Choice."))
+    if s==1:
+        y=input("Enter The names:").lower().strip()
+        #p=y.lower().strip()
+        x=int(input("Enter The Corresponding numbers."))
+        k.update({y:x})
+    else:
+        print("Sorry...")
+        break
+    
+print("Enter The Nama for which u want to find the numbers")
+#y.update({x:y}
+f=input("Enter The Name:")
+q=f.strip().lower()
+print(k)
+#f.upper()
+for j in k:
+    l=0
+    if j==q:
+        print("Found The Contact and the number is:",k[j])
+        l=1
+
+if l==0:
+    print("Not Found")
